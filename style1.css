@@ -1,48 +1,90 @@
-#page-container{width:760px; margin: auto; background: rgb(200, 121, 237)}
-
-#header {background: rgb(95, 240, 228); height: 150px; }
-
-#content {background: rgb(255, 215, 113); } 
-
-
-
-#main-nav { 
-height: 15px; 
-text-align:center; 
-font-family: Tahoma, Arial, Helvetica, Sans-serif; 
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-#main-nav a{ 
-color: #c9c9c9; 
-text-decoration: none; 
-} 
-
-#footer { 
-height: 70px; 
-font-family: Tahoma, Arial, Helvetica, Sans-serif; 
-font-size: 10px; 
-color: #000000; 
-border-top: 1px solid #000000; 
-padding: 13px 25px; 
-line-height: 18px; 
-} 
-
-#footer a { 
-color: #000000; 
-text-decoration: none; 
+body {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-#footer a:hover { 
-color: #db6d16; 
+/* Container */
+#page-container {
+  width: 80%;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease;
 }
 
-#footer #altnav { 
-width: 350px; 
-float: right; 
-text-align: right; 
+/* Navigation */
+#main-nav, #altnav {
+  text-align: center;
+  margin: 15px 0;
 }
 
-#content { 
-font-family:Tahoma, arial, helvetica, sans-serif; 
-font-size:14px; 
-padding: 15px 15px;}
+#main-nav a, #altnav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin: 0 12px;
+  padding: 8px 14px;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+#main-nav a:hover, #altnav a:hover {
+  background: #66a6ff;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(102, 166, 255, 0.6);
+}
+
+/* Header */
+#Header {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #444;
+  margin: 20px 0;
+  animation: slideDown 1.2s ease;
+}
+
+/* Content */
+#content {
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #444;
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Footer */
+#footer {
+  margin-top: 30px;
+  padding: 20px;
+  background: #333;
+  color: #eee;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+#footer a {
+  color: #66a6ff;
+  transition: color 0.3s ease;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
